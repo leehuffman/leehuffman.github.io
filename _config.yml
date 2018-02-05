@@ -13,16 +13,28 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Your awesome title
-email: your-email@example.com
+title: Lee Huffman
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Lee Huffman: GitHub, Wild Buffalo House of Music, Bellingham Engraving,
+  Milk + Honey Crew
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+permalink: ':title/'
+blog_theme: dark
+
+# Profile information
+name: Lee Huffman
+tagline: Bellingham, WA.
+about-description: SRE Data Center at GitHub, Co-Owner at Wild Buffalo House of Music, Partner at Bellingham Engraving,
+  Founder at Milk + Honey Crew, Real Estate.
+pic: me.jpg  # Place a 200x200 picture inside /assets/img/ folder and provide the name of the file below
+
+# Contact links
+email: lee.huffman@gmail.com
+website: leehuffman.io
+linkedin: iamleehuffman
+github: leehuffman
+twitter: '@leehuffman'
 
 # Build settings
 markdown: kramdown
@@ -30,14 +42,10 @@ remote_theme: artemsheludko/monday
 plugins:
   - jekyll-feed
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+# Important settings
+assets:
+  sources:
+    - assets/fonts
+    - assets/img
+    - assets/js
+    - assets/stylesheets

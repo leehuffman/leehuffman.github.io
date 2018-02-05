@@ -17,18 +17,6 @@ layout: default
     <div class="contact-contaiver">
       <ul class="contact-list">
 
-        {% if site.email %}
-          <li class="email"><a href="mailto:{{site.email}}"><i class="fa fa-envelope-o"></i> {{site.email}}</a></li>
-        {% else %}
-          <li class="email"><a href="mailto:sheludkoartem@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> sheludkoartem@gmail.com</a></li>
-        {% endif %}
-
-        {% if site.website %}
-          <li class="website"><a href="http://{{site.website}}" target="_blank"><i class="fa fa-globe"></i> {{site.website}}</a></li>
-        {% else %}
-        <li class="website"><a href="http://artemsheludko.pw" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i> artemsheludko.pw</a></li>
-        {% endif %}
-
         {% if site.linkedin %}
           <li class="linkedin"><a href="https://in.linkedin.com/in/{{site.linkedin}}" target="_blank"><i class="fa fa-linkedin"></i> linkedin.com/in/{{site.linkedin}}</a></li>
         {% else %}
@@ -47,6 +35,17 @@ layout: default
           <li class="twitter"><a href="https://twitter.com/artemsheludko_" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> @artemsheludko_</a></li>
         {% endif %}
 
+        {% if site.email %}
+          <li class="email"><a href="mailto:{{site.email}}"><i class="fa fa-envelope-o"></i> {{site.email}}</a></li>
+        {% else %}
+          <li class="email"><a href="mailto:sheludkoartem@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> sheludkoartem@gmail.com</a></li>
+        {% endif %}
+
+        {% if site.website %}
+          <li class="website"><a href="http://{{site.website}}" target="_blank"><i class="fa fa-globe"></i> {{site.website}}</a></li>
+        {% else %}
+        <li class="website"><a href="http://artemsheludko.pw" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i> artemsheludko.pw</a></li>
+        {% endif %}
       </ul>
     </div>
   </div>

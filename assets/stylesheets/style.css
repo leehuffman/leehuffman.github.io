@@ -5,3 +5,8 @@
 .about .tagline {
   color: #C0C0C0;
 }
+
+.about img.face {
+  width: 350px;
+  max-width: 90%;
+}
